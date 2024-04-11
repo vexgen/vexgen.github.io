@@ -19,31 +19,46 @@
             table {
                 background-color: #fff;
             }
+            .rounded thead {
+                border-top-left-radius: 10px; /* Add this line */
+                border-top-right-radius: 10px; /* Add this line */
+            }
+            .rounded tbody {
+                border-bottom-left-radius: 10px; /* Add this line */
+                border-bottom-right-radius: 10px; /* Add this line */
+            }
         </style>
     </head>
     <body>
     <div class="container">
         <h1 class="text-center mb-4">NVD CVE Analysis Statistics</h1>
         <table class="table table-striped rounded table-hover">
-    <thead><tr><th scope="col">Time Period</th><th scope="col">New CVEs Received by NVD</th><th scope="col">New CVEs Analyzed by NVD</th><th scope="col">Modified CVEs Received by NVD</th><th scope="col">Modified CVEs Re-analyzed by NVD</th><th scope="col">Percentage Analyzed</th><th scope="col">Average</th></tr></thead>
+    <thead><tr><th scope="col">Time Period</th><th scope="col">New CVEs Received by NVD</th><th scope="col">New CVEs Analyzed by NVD</th><th scope="col">Modified CVEs Received by NVD</th><th scope="col">Modified CVEs Re-analyzed by NVD</th><th scope="col">Percentage Analyzed</th><th scope="col">Average CVEs Analyzed</th></tr></thead>
 <tbody>
-<tr><td>Today</td><td>444</td><td>18</td><td>0</td><td>0</td><td>4.05%</td><td></td></tr>
-<tr><td>This Week</td><td>797</td><td>44</td><td>0</td><td>2</td><td>5.52%</td><td>14.67</td></tr>
-<tr><td>This Month</td><td>1476</td><td>68</td><td>0</td><td>17</td><td>4.61%</td><td>6.80</td></tr>
+<tr><td>Today</td><td>574</td><td>44</td><td>0</td><td>0</td><td>7.67%</td><td></td></tr>
+<tr><td>This Week</td><td>927</td><td>70</td><td>0</td><td>2</td><td>7.55%</td><td>23.33</td></tr>
+<tr><td>This Month</td><td>1606</td><td>94</td><td>0</td><td>17</td><td>5.85%</td><td>9.40</td></tr>
 <tr><td>Last Month</td><td>3370</td><td>199</td><td>0</td><td>102</td><td>5.91%</td><td>6.63</td></tr>
-<tr><td>This Year</td><td>10204</td><td>4367</td><td>0</td><td>1225</td><td>42.80%</td><td>43.67</td></tr>
+<tr><td>This Year</td><td>10334</td><td>4393</td><td>0</td><td>1225</td><td>42.51%</td><td>43.93</td></tr>
+</tbody>
+</table>
+<h2 class="text-center mb-4 mt-5">2024 Backlog + Daily New CVE Effort Requirements</h2>
+<table class="table table-striped rounded table-hover">
+<thead><tr><th>CVEs Awaiting Analysis</th><th>Days Left in 2024</th><th>Daily Average Required to Analyze Backlog</th><th>Average New Daily CVEs (2024)</th><th>2024 Required Total Daily Effort (Avg. Daily New CVEs + Backlog CVEs)</th></tr></thead>
+<tbody>
+<tr><td>6372</td><td>265</td><td>24.05</td><td>103.34</td><td>127.39</td></tr>
 </tbody>
 </table>
 <h2 class="text-center mb-4 mt-5">CVE Status Count</h2>
 <table class="table table-striped rounded table-hover">
 <tbody>
-<tr><td>Total</td><td>245031</td></tr>
-<tr><td>Received</td><td>41</td></tr>
-<tr><td>Awaiting Analysis</td><td>6244</td></tr>
-<tr><td>Undergoing Analysis</td><td>172</td></tr>
-<tr><td>Modified</td><td>94037</td></tr>
+<tr><td>Total</td><td>245185</td></tr>
+<tr><td>Received</td><td>65</td></tr>
+<tr><td>Awaiting Analysis</td><td>6372</td></tr>
+<tr><td>Undergoing Analysis</td><td>148</td></tr>
+<tr><td>Modified</td><td>94058</td></tr>
 <tr><td>Rejected</td><td>14019</td></tr>
 </tbody>
 </table>
-<p class="text-right mt-4">Generated on 2024-04-10 10:16:15 PST</p>
+<p class="text-right mt-4">Generated on 2024-04-10 18:56:09 PST</p>
 </div></body></html>

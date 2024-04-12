@@ -28,7 +28,7 @@
                 border-bottom-left-radius: 10px; /* Add this line */
                 border-bottom-right-radius: 10px; /* Add this line */
             }
-            th {
+            th {+
                 vertical-align: top;
             }
         </style>
@@ -36,9 +36,11 @@
     <body>
     <div class="container">
         <h1 class="text-center mb-4">NVD CVE Analysis Rate Report</h1>
-            <p>Estimates are based on publicly provided data obtained from <a href="https://nvd.nist.gov/general/nvd-dashboard">https://nvd.nist.gov/general/nvd-dashboard</a></p>
-        <table class="table table-striped table-hover">
-    <thead><tr><th scope="col">Time Period</th><th scope="col">New CVEs Received by NVD</th><th scope="col">New CVEs Analyzed by NVD</th><th scope="col">Modified CVEs Received by NVD</th><th scope="col">Modified CVEs Re-analyzed by NVD</th><th scope="col">Percent of New CVEs Analyzed</th><th scope="col">Daily Average New CVEs Analyzed</th></tr></thead>
+            
+        
+    
+    <p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard. </a> At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 43.09. There is a current backlog of 6566 CVEs awaiting analysis. With an average influx of 103.07 new CVEs per day, a daily average of 128.04 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 84.95 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 22340.74.</p>
+<table class="table table-striped table-hover"><thead><tr><th scope="col">Time Period</th><th scope="col">New CVEs Received by NVD</th><th scope="col">New CVEs Analyzed by NVD</th><th scope="col">Modified CVEs Received by NVD</th><th scope="col">Modified CVEs Re-analyzed by NVD</th><th scope="col">Percent of New CVEs Analyzed</th><th scope="col">Daily Average New CVEs Analyzed</th></tr></thead>
 <tbody>
 <tr><td>Today</td><td>50</td><td>0</td><td>0</td><td>0</td><td>0.00%</td><td></td></tr>
 <tr><td>This Week</td><td>1106</td><td>72</td><td>0</td><td>4</td><td>6.51%</td><td>14.40</td></tr>
@@ -65,5 +67,5 @@
 </tbody>
 </table>
 </div>
-<p class="text-right mt-4">Generated on 2024-04-12 07:49:48 PST</p>
+<p class="text-right mt-4">Generated on 2024-04-12 11:19:50 PST</p>
 </div></body></html>

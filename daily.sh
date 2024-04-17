@@ -2,9 +2,9 @@
 
 echo "Daily update started"
 
-python3 scraper.py
+python3 /home/jamie/development/python/nvdScrape/scraper.py
 
-cp html/vexgen.github.io/index.html html/vexgen.github.io/archive/$(date +%Y-%m-%d).html
+cp index.html archive/$(date +%Y-%m-%d).html
 
 git add .
 git commit -m "Daily update"

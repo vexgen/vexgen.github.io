@@ -17,7 +17,7 @@ Requirements:
 - BeautifulSoup4
 - Selenium
 
-Ensure that the browser driver is installed. The script is currently set to use the Firefox driver, but can be easily modified to use another browser driver by changing the driver variable in the code i.e. '''driver = webdriver.Firefox()''' to '''driver = webdriver.Chrome()'''.
+Ensure that the browser driver is installed. The script is currently set to use the Firefox driver, but can be easily modified to use another browser driver by changing the driver variable in the code i.e. ```driver = webdriver.Firefox()''' to '''driver = webdriver.Chrome()```.
 
 To run the script ensure that the requirements are installed and run the following:
 

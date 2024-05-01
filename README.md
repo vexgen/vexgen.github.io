@@ -17,13 +17,13 @@ Requirements:
 - BeautifulSoup4
 - Selenium
 
-Ensure that the browser driver is installed. The script is currently set to use the Firefox driver, but can be easily modified to use another browser driver by changing the driver variable in the code i.e. ```driver = webdriver.Firefox()''' to '''driver = webdriver.Chrome()```.
+Ensure that the browser driver is installed. The script is currently set to use the Firefox driver, but can be easily modified to use another browser driver by changing the driver variable in the code i.e. ```driver = webdriver.Firefox()``` to ```driver = webdriver.Chrome()```.
 
 To run the script ensure that the requirements are installed and run the following:
 
 ```python3 nvd_rate_report_tool.py```
 
-When run, the script will open a browser window and load the NVD Dashboard page. It will then extract the data and generate a report. The report is output an HTML markdown file (default "index.html") with the data for the current day. 
+When run, the script will open a browser window and load the NVD Dashboard page. It will then extract the data and generate a report. The report is output as an HTML markdown file (default "index.html") with the data for the current day. 
 
 I run and upload a copy daily, which can be viewed at: [https://vexgen.github.io/](https://vexgen.github.io/)
 

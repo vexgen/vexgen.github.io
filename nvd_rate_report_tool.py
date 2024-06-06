@@ -1,3 +1,4 @@
+import json
 from datetime import datetime, timedelta
 from selenium import webdriver
 from bs4 import BeautifulSoup
@@ -19,7 +20,8 @@ print("NVD CVE Rate Analysis Tool")
 url = "https://nvd.nist.gov/general/nvd-dashboard"
 
 # Define the filename that the data will be written to
-filename = 'index.html'
+html_filename = 'index.html'
+json_filename = 'data.json'
 
 # IMPORTANT!!! - change this to your own browser value (e.g. Chrome). This creates a new instance of the Firefox driver. 
 driver = webdriver.Firefox()
@@ -208,6 +210,7 @@ summary = '''
     <p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard. </a> At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is {}. There is a current backlog of {} CVEs awaiting analysis. With an average influx of {} new CVEs per day, a daily average of {} analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by {} CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be {}.</p>
 '''.format(this_year_average, awaiting_analysis, average_new_daily_cves, required_daily_effort, short_of_goal, end_of_year_forecast)
 
+summary_json = '''<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard. </a> At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is {}. There is a current backlog of {} CVEs awaiting analysis. With an average influx of {} new CVEs per day, a daily average of {} analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by {} CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be {}.</p>'''.format(this_year_average, awaiting_analysis, average_new_daily_cves, required_daily_effort, short_of_goal, end_of_year_forecast)
 
 print("\nGenerating HTML...")
 
@@ -215,7 +218,7 @@ print("\nGenerating HTML...")
 
 try:
 
-    with open(filename, 'w') as f:
+    with open(html_filename, 'w') as f:
 
         # Write the start of the HTML file. 
         f.write('''
@@ -335,5 +338,43 @@ except Exception as e:
     print(f"\nFailure: {e}")
 
 else:
-    print(f"\n{filename} written successfully...")
-    print("\nExiting...")
+    print(f"\n{html_filename} written successfully...")
+    
+
+# Adding JSON output
+
+json_data = {
+
+    # Summary statement that is printed at the top of the HTML page under the main title.
+    'summary': summary_json,
+
+    # daily_average_new_cves_analyzed is the daily average for analyzing new CVEs for the current year
+    'daily_average_new_cves_analyzed': this_year_average,
+    # cves_awaiting_analysis is the number of CVEs currently awaiting analysis by NVD (the backlog)
+    'cves_awaiting_analysis': awaiting_analysis,
+    # required_daily_effort is the daily average required to analyze the backlog of CVEs awaiting analysis and new CVEs by the end of 2024
+    'required_daily_effort': required_daily_effort,
+    # short_of_goal is used in summary statement below to indicate how far off NVD are from hitting the goal to clear New CVEs and Backlog CVEs by EOY
+    'short_of_goal': short_of_goal,
+
+    # Table 1: CVEs Received and Processed
+    'table_data': table_data,
+
+    # days_left_in_2024 is the number of days left in the year
+    'days_left_in_2024': days_left,
+
+    # average_new_daily_cves is the average number of new daily CVEs for the current year
+    'average_new_daily_cves': average_new_daily_cves,
+    
+    # end_of_year_forecast is the estimated number of CVEs awaiting analysis at the end of 2024
+    'estimated_cves_awaiting_analysis_at_eoy': end_of_year_forecast
+
+}
+
+json_output = json.dumps(json_data, indent=4)
+
+with open(json_filename, 'w') as f:
+    f.write(json_output)
+
+print("\nJSON output written successfully...")
+print("\nExiting...")

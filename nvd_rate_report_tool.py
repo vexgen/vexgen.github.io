@@ -1,5 +1,6 @@
 import json
 from datetime import datetime, timedelta
+import pytz
 from selenium import webdriver
 from bs4 import BeautifulSoup
 
@@ -20,8 +21,8 @@ print("NVD CVE Rate Analysis Tool")
 url = "https://nvd.nist.gov/general/nvd-dashboard"
 
 # Define the filename that the data will be written to
-html_filename = 'index.html'
-json_filename = 'data.json'
+html_filename = '/home/jamie/development/python/nvdScrape/html/vexgen.github.io/index.html'
+json_filename = '/home/jamie/development/python/nvdScrape/html/vexgen.github.io/data.json'
 
 # IMPORTANT!!! - change this to your own browser value (e.g. Chrome). This creates a new instance of the Firefox driver. 
 driver = webdriver.Firefox()
@@ -40,6 +41,8 @@ days_passed_month = now.day
 
 # Calculate the number of days that have passed since the start of the week
 days_passed_week = now.weekday() + 1  # Monday is 0, Sunday is 6
+
+est = pytz.timezone('US/Eastern')
 
 
 print("\nSpawning browser...")
@@ -344,6 +347,9 @@ else:
 # Adding JSON output
 
 json_data = {
+
+    # Timestamp of when the JSON file was generated
+    'timestamp': datetime.now(est).strftime('%Y-%m-%d %H:%M:%S'),
 
     # Summary statement that is printed at the top of the HTML page under the main title.
     'summary': summary_json,

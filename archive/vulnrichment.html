@@ -3,13 +3,20 @@
 <head>
     <title>Vulnrichment Dashoard</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/yeti/bootstrap.min.css">
+    <style>
+        .title {
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-      <h1 class="my-4">Vulnrichment Dashboard</h1>
-      <p> Generated On: 2024-06-25 11:09:08 PST</p>
+      <h1 class="my-4 title">Vulnrichment Dashboard</h1>
+      <p> Updated 2024-06-25 15:17:54 PST</p>
       <h4 class="my-4">CVE SSVC Enrichment Data</h4>
-      <p>SSVC (Stakeholder-Specific Vulnerability Categorization) is a set of metrics that provide a qualitative measure of the severity of a vulnerability. The SSVC metrics are designed to be used by organizations to prioritize the vulnerabilities they address. The SSVC metrics are based on the Common Vulnerability Scoring System (CVSS) and are intended to complement CVSS by providing additional information about the characteristics of a vulnerability that are not captured by CVSS. The data in the following table is drevied from the timestamp value found in the ADP metadata.</p>
+      
+      <p>The data presented in this table represents the number of CVE records enriched by the Cybersecurity and Infrastructure Security Agency (CISA) as part of their vulnerability enrichment (vulnrichment) effort. The records are categorized by different time periods: Today, This Week, Last Week, This Month, Last Month, and This Year. These time periods are calculated using the timestamp values found in the SSVC content provided by CISA in the <a href="https://github.com/cisagov/vulnrichment">vulnrichment</a> GitHub repository.</p>
     <table class="table" id="stats">
         <thead class="thead-dark">
         <tr>
@@ -19,11 +26,11 @@
         </thead>
         <tr>
             <td>Today</td>
-            <td>96</td>
+            <td>145</td>
         </tr>
         <tr>
             <td>This week</td>
-            <td>194</td>
+            <td>243</td>
         </tr>
         <tr>
             <td>Last week</td>
@@ -31,7 +38,7 @@
         </tr>
         <tr>
             <td>This month</td>
-            <td>3073</td>
+            <td>3123</td>
         </tr>
         <tr>
             <td>Last month</td>
@@ -39,7 +46,7 @@
         </tr>
         <tr>
             <td>This year</td>
-            <td>10434</td>
+            <td>10487</td>
         </tr>
     </table>
       <div class="row">
@@ -57,15 +64,15 @@
                 </thead>
                 <tr>
                     <td>Active</td>
-                    <td>74</td>
+                    <td>80</td>
                 </tr>
                 <tr>
                     <td>POC</td>
-                    <td>1058</td>
+                    <td>1069</td>
                 </tr>
                 <tr>
                     <td>None</td>
-                    <td>9314</td>
+                    <td>9352</td>
                 </tr>
             </table>
         </div>
@@ -80,11 +87,11 @@
                 </thead>
                 <tr>
                     <td>Yes</td>
-                    <td>1295</td>
+                    <td>1308</td>
                 </tr>
                 <tr>
                     <td>No</td>
-                    <td>9151</td>
+                    <td>9193</td>
                 </tr>
             </table>
         </div>
@@ -100,36 +107,40 @@
                 </thead>
                 <tr>
                     <td>Total</td>
-                    <td>3084</td>
+                    <td>3110</td>
                 </tr>
                 <tr>
                     <td>Partial</td>
-                    <td>7362</td>
+                    <td>7391</td>
                 </tr>
             </table>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <h4 class="my-4">CISA ADP CVE Metric Additions</h4>
+            <h4 class="my-4">CVE Record Enhancements (ADP)</h4>
             <table class="table" id="metric_counts">
                 <thead class="thead-dark">
                 <tr>
-                    <th>Metric</th>
-                    <th>Number of CVE Records with ADP added value</th>
+                    <th>Metric/Property</th>
+                    <th>Number of CVE records with enhancement</th>
                 </tr>
                 </thead>
                 <tr>
                     <td>CVSS 3.1 Score</td>
-                    <td>1216</td>
+                    <td>1227</td>
                 </tr>
                 <tr>
                     <td>CWE-ID</td>
-                    <td>1299</td>
+                    <td>1309</td>
                 </tr>
                 <tr>
                     <td>CPE String (at least 1)</td>
-                    <td>4508</td>
+                    <td>4543</td>
+                </tr>
+                <tr>
+                    <td>CISA KEV Presence</td>
+                    <td>78</td>
           </table>
         </div>
     </div>
@@ -146,12 +157,12 @@
             
             <tr>
                 <td>CWE-89 - Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</td>
-                <td>132</td>
+                <td>133</td>
             </tr>
             
             <tr>
                 <td>CWE-79 - Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')</td>
-                <td>112</td>
+                <td>116</td>
             </tr>
             
             <tr>
@@ -166,7 +177,7 @@
             
             <tr>
                 <td>CWE-400 - Uncontrolled Resource Consumption</td>
-                <td>44</td>
+                <td>45</td>
             </tr>
             
         </table>
@@ -189,15 +200,35 @@
         </tr>
     </thead>
     <tbody>
-        <tr><td><span style="background-color:black; padding: 5px; font-weight: bold; color: white;">Critical</span></td><td>227</td></tr>
-        <tr><td><span style="background-color:red; padding: 5px; font-weight: bold;">High</span></td><td>527</td></tr>
-        <tr><td><span style="background-color:orange; padding: 5px; font-weight: bold;">Medium</span></td><td>422</td></tr>
+        <tr><td><span style="background-color:black; padding: 5px; font-weight: bold; color: white;">Critical</span></td><td>231</td></tr>
+        <tr><td><span style="background-color:red; padding: 5px; font-weight: bold;">High</span></td><td>529</td></tr>
+        <tr><td><span style="background-color:orange; padding: 5px; font-weight: bold;">Medium</span></td><td>427</td></tr>
         <tr><td><span style="background-color:yellow; padding: 5px; font-weight: bold;">Low</span></td><td>27</td></tr>
         <tr><td><span style="background-color:gray; padding: 5px; font-weight: bold; color: white;">None</span></td><td>13</td></tr>
     </tbody>
 </table>
             </div>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <h4 class="my-4">ADP/CNA CVSS 3.1 Score Comparison</h4>
+        <p>This table shows the average CVSS 3.1 base score calculated from all vulnrichment CVE records that contain a CVSS 3.1 score from BOTH the ADP and the CNA.</p>
+        <table class="table" id="cvss_score_comparison">
+            <thead class="thead-dark">
+            <tr>
+                <th>Average ADP CVSS 3.1 Score</th>
+                <th>Average CNA CVSS 3.1 Score</th>
+                <th>Difference</th>
+            </tr>
+            </thead>
+            <tr>
+                <td>7.39</td>
+                <td>6.7</td>
+                <td>0.69</td>
+            </tr>
+        </table>
     </div>
 </div>
     </div>

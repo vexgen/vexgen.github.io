@@ -1,5 +1,5 @@
 {
-    "timestamp": "2024-07-13 13:51:39",
+    "timestamp": "2024-07-13 14:27:41",
     "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 29.75. There is a current backlog of 16476 CVEs awaiting analysis. With an average influx of 113.5 new CVEs per day, a daily average of 209.85 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 180.1 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 30797.25.</p>",
     "daily_average_new_cves_analyzed": 29.75,
     "cves_awaiting_analysis": 16476,
@@ -53,6 +53,7 @@
         }
     ],
     "days_left_in_2024": 171,
+    "average_cves_awaiting_analysis_per_day": 96.35,
     "average_new_daily_cves": 113.5,
     "estimated_cves_awaiting_analysis_at_eoy": 30797.25
 }

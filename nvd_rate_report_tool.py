@@ -210,10 +210,10 @@ short_of_goal = round(short_of_goal, 2)
 
 ## This is the summary statement that is printed at the top of the HTML page under the main title.
 summary = '''
-    <p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard. </a> At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is {}. There is a current backlog of {} CVEs awaiting analysis. With an average influx of {} new CVEs per day, a daily average of {} analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by {} CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be {}.</p>
+    <p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is {}. There is a current backlog of {} CVEs awaiting analysis. With an average influx of {} new CVEs per day, a daily average of {} analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by {} CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be {}.</p>
 '''.format(this_year_average, awaiting_analysis, average_new_daily_cves, required_daily_effort, short_of_goal, end_of_year_forecast)
 
-summary_json = '''<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard. </a> At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is {}. There is a current backlog of {} CVEs awaiting analysis. With an average influx of {} new CVEs per day, a daily average of {} analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by {} CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be {}.</p>'''.format(this_year_average, awaiting_analysis, average_new_daily_cves, required_daily_effort, short_of_goal, end_of_year_forecast)
+summary_json = '''<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is {}. There is a current backlog of {} CVEs awaiting analysis. With an average influx of {} new CVEs per day, a daily average of {} analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by {} CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be {}.</p>'''.format(this_year_average, awaiting_analysis, average_new_daily_cves, required_daily_effort, short_of_goal, end_of_year_forecast)
 
 print("\nGenerating HTML...")
 
@@ -368,6 +368,9 @@ json_data = {
 
     # days_left_in_2024 is the number of days left in the year
     'days_left_in_2024': days_left,
+
+    # result is the average number of CVEs awaiting analysis per day
+    'average_cves_awaiting_analysis_per_day': result,
 
     # average_new_daily_cves is the average number of new daily CVEs for the current year
     'average_new_daily_cves': average_new_daily_cves,

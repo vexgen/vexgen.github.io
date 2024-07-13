@@ -369,8 +369,8 @@ json_data = {
     # days_left_in_2024 is the number of days left in the year
     'days_left_in_2024': days_left,
 
-    # result is the average number of CVEs awaiting analysis per day
-    'average_cves_awaiting_analysis_per_day': result,
+    # result is the number of daily analyses required to clear the backlog of CVEs awaiting analysis by the end of 2024
+    'daily_average_to_clear_backlog': result,
 
     # average_new_daily_cves is the average number of new daily CVEs for the current year
     'average_new_daily_cves': average_new_daily_cves,

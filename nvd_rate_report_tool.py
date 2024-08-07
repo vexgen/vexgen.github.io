@@ -21,8 +21,8 @@ print("NVD CVE Rate Analysis Tool")
 url = "https://nvd.nist.gov/general/nvd-dashboard"
 
 # Define the filename that the data will be written to
-html_filename = '/home/jamie/development/python/nvdScrape/html/vexgen.github.io/index.html'
-json_filename = '/home/jamie/development/python/nvdScrape/html/vexgen.github.io/data.json'
+html_filename = 'index.html'
+json_filename = 'data.json'
 
 # IMPORTANT!!! - change this to your own browser value (e.g. Chrome). This creates a new instance of the Firefox driver. 
 driver = webdriver.Firefox()

@@ -1,37 +1,37 @@
 {
-    "timestamp": "2024-08-22 16:13:50",
-    "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 34.27. There is a current backlog of 17682 CVEs awaiting analysis. With an average influx of 111.06 new CVEs per day, a daily average of 246.04 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 211.77 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 27741.49.</p>",
-    "daily_average_new_cves_analyzed": 34.27,
-    "cves_awaiting_analysis": 17682,
+    "timestamp": "2024-08-22 20:52:27",
+    "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 34.28. There is a current backlog of 17683 CVEs awaiting analysis. With an average influx of 111.06 new CVEs per day, a daily average of 246.04 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 211.76 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 27741.18.</p>",
+    "daily_average_new_cves_analyzed": 34.28,
+    "cves_awaiting_analysis": 17683,
     "required_daily_effort": 246.04,
-    "short_of_goal": 211.77,
+    "short_of_goal": 211.76,
     "table_data": [
         {
             "Time Period": "Today",
             "New CVEs Received by NVD": "110",
-            "New CVEs Analyzed by NVD": "99",
+            "New CVEs Analyzed by NVD": "100",
             "Modified CVEs Received by NVD": "0",
-            "Modified CVEs Re-analyzed by NVD": "1",
-            "Percent of New CVEs Analyzed": "90.00%",
+            "Modified CVEs Re-analyzed by NVD": "4",
+            "Percent of New CVEs Analyzed": "90.91%",
             "Daily Average New CVEs Analyzed": ""
         },
         {
             "Time Period": "This Week",
             "New CVEs Received by NVD": "771",
-            "New CVEs Analyzed by NVD": "510",
+            "New CVEs Analyzed by NVD": "511",
             "Modified CVEs Received by NVD": "0",
-            "Modified CVEs Re-analyzed by NVD": "7",
-            "Percent of New CVEs Analyzed": "66.15%",
-            "Daily Average New CVEs Analyzed": "127.50"
+            "Modified CVEs Re-analyzed by NVD": "10",
+            "Percent of New CVEs Analyzed": "66.28%",
+            "Daily Average New CVEs Analyzed": "127.75"
         },
         {
             "Time Period": "This Month",
             "New CVEs Received by NVD": "2278",
-            "New CVEs Analyzed by NVD": "1641",
+            "New CVEs Analyzed by NVD": "1642",
             "Modified CVEs Received by NVD": "0",
-            "Modified CVEs Re-analyzed by NVD": "87",
-            "Percent of New CVEs Analyzed": "72.04%",
-            "Daily Average New CVEs Analyzed": "74.59"
+            "Modified CVEs Re-analyzed by NVD": "90",
+            "Percent of New CVEs Analyzed": "72.08%",
+            "Daily Average New CVEs Analyzed": "74.64"
         },
         {
             "Time Period": "Last Month",
@@ -45,15 +45,15 @@
         {
             "Time Period": "This Year",
             "New CVEs Received by NVD": "25989",
-            "New CVEs Analyzed by NVD": "8020",
+            "New CVEs Analyzed by NVD": "8021",
             "Modified CVEs Received by NVD": "0",
-            "Modified CVEs Re-analyzed by NVD": "1981",
+            "Modified CVEs Re-analyzed by NVD": "1984",
             "Percent of New CVEs Analyzed": "30.86%",
-            "Daily Average New CVEs Analyzed": "34.27"
+            "Daily Average New CVEs Analyzed": "34.28"
         }
     ],
     "days_left_in_2024": 131,
     "daily_average_to_clear_backlog": 134.98,
     "average_new_daily_cves": 111.06,
-    "estimated_cves_awaiting_analysis_at_eoy": 27741.49
+    "estimated_cves_awaiting_analysis_at_eoy": 27741.18
 }

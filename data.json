@@ -1,37 +1,37 @@
 {
-    "timestamp": "2024-11-13 17:25:56",
-    "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 46.76. There is a current backlog of 19722 CVEs awaiting analysis. With an average influx of 108.91 new CVEs per day, a daily average of 519.79 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 473.03 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 22705.2.</p>",
-    "daily_average_new_cves_analyzed": 46.76,
+    "timestamp": "2024-11-13 21:13:41",
+    "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 46.82. There is a current backlog of 19722 CVEs awaiting analysis. With an average influx of 108.91 new CVEs per day, a daily average of 519.79 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 472.97 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 22702.32.</p>",
+    "daily_average_new_cves_analyzed": 46.82,
     "cves_awaiting_analysis": 19722,
     "required_daily_effort": 519.79,
-    "short_of_goal": 473.03,
+    "short_of_goal": 472.97,
     "table_data": [
         {
             "Time Period": "Today",
             "New CVEs Received by NVD": "349",
-            "New CVEs Analyzed by NVD": "150",
+            "New CVEs Analyzed by NVD": "171",
             "Modified CVEs Received by NVD": "0",
             "Modified CVEs Re-analyzed by NVD": "1",
-            "Percent of New CVEs Analyzed": "42.98%",
+            "Percent of New CVEs Analyzed": "49.00%",
             "Daily Average New CVEs Analyzed": ""
         },
         {
             "Time Period": "This Week",
             "New CVEs Received by NVD": "811",
-            "New CVEs Analyzed by NVD": "241",
+            "New CVEs Analyzed by NVD": "262",
             "Modified CVEs Received by NVD": "0",
             "Modified CVEs Re-analyzed by NVD": "1",
-            "Percent of New CVEs Analyzed": "29.72%",
-            "Daily Average New CVEs Analyzed": "80.33"
+            "Percent of New CVEs Analyzed": "32.31%",
+            "Daily Average New CVEs Analyzed": "87.33"
         },
         {
             "Time Period": "This Month",
             "New CVEs Received by NVD": "1961",
-            "New CVEs Analyzed by NVD": "906",
+            "New CVEs Analyzed by NVD": "927",
             "Modified CVEs Received by NVD": "0",
             "Modified CVEs Re-analyzed by NVD": "13",
-            "Percent of New CVEs Analyzed": "46.20%",
-            "Daily Average New CVEs Analyzed": "69.69"
+            "Percent of New CVEs Analyzed": "47.27%",
+            "Daily Average New CVEs Analyzed": "71.31"
         },
         {
             "Time Period": "Last Month",
@@ -45,15 +45,15 @@
         {
             "Time Period": "This Year",
             "New CVEs Received by NVD": "34523",
-            "New CVEs Analyzed by NVD": "14822",
+            "New CVEs Analyzed by NVD": "14843",
             "Modified CVEs Received by NVD": "0",
             "Modified CVEs Re-analyzed by NVD": "2154",
-            "Percent of New CVEs Analyzed": "42.93%",
-            "Daily Average New CVEs Analyzed": "46.76"
+            "Percent of New CVEs Analyzed": "42.99%",
+            "Daily Average New CVEs Analyzed": "46.82"
         }
     ],
     "days_left_in_2024": 48,
     "daily_average_to_clear_backlog": 410.88,
     "average_new_daily_cves": 108.91,
-    "estimated_cves_awaiting_analysis_at_eoy": 22705.2
+    "estimated_cves_awaiting_analysis_at_eoy": 22702.32
 }

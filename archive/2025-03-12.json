@@ -1,10 +1,10 @@
 {
-    "timestamp": "2025-03-12 19:33:54",
-    "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2024 daily average for analyzing new CVEs is 104.74. There is a current backlog of 24065 CVEs awaiting analysis. With an average influx of 136.34 new CVEs per day, a daily average of 218.19 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 113.45 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2024 will be 33355.4.</p>",
+    "timestamp": "2025-03-12 19:43:00",
+    "summary": "<p>The following estimates are calculated using data from the <a href='https://nvd.nist.gov/general/nvd-dashboard'>NVD Dashboard</a>. At the time of this reports generation, NVD's 2025 daily average for analyzing new CVEs is 104.74. There is a current backlog of 24056 CVEs awaiting analysis. With an average influx of 136.34 new CVEs per day, a daily average of 218.16 analyses is required to clear this backlog and process new CVEs. Currently, NVD is falling short of this goal by 113.42 CVEs a day. Given this data, if the current daily rate of CVE analysis persists, the projected number of CVEs awaiting analysis by the end of 2025 will be 33346.4.</p>",
     "daily_average_new_cves_analyzed": 104.74,
-    "cves_awaiting_analysis": 24065,
-    "required_daily_effort": 218.19,
-    "short_of_goal": 113.45,
+    "cves_awaiting_analysis": 24056,
+    "required_daily_effort": 218.16,
+    "short_of_goal": 113.42,
     "table_data": [
         {
             "Time Period": "Today",
@@ -53,7 +53,7 @@
         }
     ],
     "days_left_in_2024": 294,
-    "daily_average_to_clear_backlog": 81.85,
+    "daily_average_to_clear_backlog": 81.82,
     "average_new_daily_cves": 136.34,
-    "estimated_cves_awaiting_analysis_at_eoy": 33355.4
+    "estimated_cves_awaiting_analysis_at_eoy": 33346.4
 }
